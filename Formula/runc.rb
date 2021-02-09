@@ -6,6 +6,8 @@ class Runc < Formula
   sha256 "70ee0fcf45b17f0da93dd4c4d174046a3584080dcc07c5468914d33d57c8202d"
   license "Apache-2.0"
 
+  head "https://github.com/opencontainers/runc.git", branch: "master"
+
   depends_on "go" => :build
   depends_on "go-md2man" => :build
   depends_on "llvm" => :build
