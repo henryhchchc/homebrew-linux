@@ -4,10 +4,10 @@
 class Podman < Formula
   desc "Tool for managing OCI containers and pods"
   homepage "https://podman.io"
-  url "https://github.com/containers/podman/archive/v3.0.0-rc3.tar.gz"
-  sha256 "d780ed25bfd0529f688b5f9d61360ba23b146e008f4c50d56e36ed2f5b9278ea"
+  url "https://github.com/containers/podman/archive/v3.0.0.tar.gz"
+  sha256 "4e9e81f570de200bbe42f452cda5366e24e35d94c303b6cc5052370552a925e6"
   license "Apache-2.0"
-  version "3.0.0-rc3"
+  version "3.0.0"
 
   head "https://github.com/containers/podman.git", branch: "master"
 
@@ -15,7 +15,7 @@ class Podman < Formula
   patch :DATA
 
   # depends_on "cmake" => :build
-  depends_on "containers-conmon"
+  # depends_on "containers-conmon"
   depends_on "runc"
   depends_on "libseccomp"
   depends_on "systemd"

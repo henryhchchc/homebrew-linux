@@ -1,4 +1,4 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
+# Documentation: https://1.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class ContainersConmon < Formula
@@ -8,7 +8,7 @@ class ContainersConmon < Formula
   sha256 "845744c3323bbf9adab4444d70fd7de0ceb12a578c9cf2fd2366c6bed0ac7970"
   license "Apache-2.0"
 
-  head "https://github.com/containers/common.git", branch: "master"
+  head "https://github.com/containers/conmon.git", branch: "master"
 
   depends_on "go" => :build
   depends_on "gcc" => :build
@@ -21,7 +21,7 @@ class ContainersConmon < Formula
   end
 
   def install
-    system "make", "build", "PREFIX=#{prefix}"
+    system "make", "PREFIX=#{prefix}"
     system "make", "install", "PREFIX=#{prefix}"
   end
 
